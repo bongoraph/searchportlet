@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd">
+	<portlet>
+		<portlet-name>Objective Folder Portlet</portlet-name>
+		<display-name>Objective Folder Portlet</display-name>
+		<portlet-class>au.gov.qld.redland.objective.CustomVaadinPortlet</portlet-class>
+		<init-param>
+			<name>UI</name>
+			<value>au.gov.qld.redland.objective.FolderUI</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>help</portlet-mode>						
+		</supports>
+
+		<portlet-info>
+			<title>Objective Folder Portlet</title>
+			<short-title>Objective Folder Portlet</short-title>
+		</portlet-info>
+	</portlet>
+	<portlet>
+		<portlet-name>Objective Folder Report Portlet</portlet-name>
+		<display-name>Objective Folder Report Portlet</display-name>
+		<portlet-class>au.gov.qld.redland.objective.CustomVaadinPortlet</portlet-class>
+		<init-param>
+			<name>UI</name>
+			<value>au.gov.qld.redland.objective.FolderReportUI</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>help</portlet-mode>						
+		</supports>
+
+		<portlet-info>
+			<title>Objective Folder Report Portlet</title>
+			<short-title>Objective Folder Report Portlet</short-title>
+		</portlet-info>
+	</portlet>	
+	<portlet>
+		<portlet-name>Objective Document View Portlet</portlet-name>
+		<display-name>Objective Document View Portlet</display-name>
+		<portlet-class>au.gov.qld.redland.objective.CustomVaadinPortlet</portlet-class>
+		<init-param>
+			<name>UI</name>
+			<value>au.gov.qld.redland.objective.DocumentViewUI</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>help</portlet-mode>						
+		</supports>
+
+		<portlet-info>
+			<title>Objective Document View Portlet</title>
+			<short-title>Objective Document View Portlet</short-title>
+		</portlet-info>
+	</portlet>	
+	<portlet>
+		<portlet-name>Objective Search Portlet</portlet-name>
+		<display-name>Objective Search Portlet</display-name>
+		<portlet-class>au.gov.qld.redland.objective.CustomVaadinPortlet</portlet-class>
+		<init-param>
+			<name>UI</name>
+			<value>au.gov.qld.redland.objective.DocumentSearchUI</value>
+		</init-param>
+
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+			<portlet-mode>help</portlet-mode>						
+		</supports>
+
+		<portlet-info>
+			<title>Objective Search Portlet</title>
+			<short-title>Objective Search Portlet</short-title>
+		</portlet-info>
+	</portlet>
+</portlet-app>

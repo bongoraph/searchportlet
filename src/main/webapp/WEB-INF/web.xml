@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>Objective Portlets</display-name>
+	<servlet>
+		<servlet-name>VaadinServlet</servlet-name>
+		<servlet-class>com.vaadin.server.VaadinServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>GetOBRFileServlet</display-name>
+		<servlet-name>GetOBRFileServlet</servlet-name>
+		<servlet-class>au.gov.qld.redland.objective.GetOBRFileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VaadinServlet</servlet-name>
+		<url-pattern>/VAADIN/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetOBRFileServlet</servlet-name>
+		<url-pattern>/GetOBRFileServlet</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>GetOBRFileServlet</servlet-name>
+		<url-pattern>/getOBR</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 4.3.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_4_3_0.dtd">
+<liferay-portlet-app>
+	<portlet>
+		<portlet-name>Objective Folder Portlet</portlet-name>
+		<instanceable>true</instanceable>
+		<private-session-attributes>true</private-session-attributes>
+		<ajaxable>false</ajaxable>
+	</portlet>
+	<portlet>
+		<portlet-name>Objective Folder Report Portlet</portlet-name>
+		<instanceable>true</instanceable>
+		<private-session-attributes>true</private-session-attributes>
+		<ajaxable>false</ajaxable>
+	</portlet>	
+	<portlet>
+		<portlet-name>Objective Document View Portlet</portlet-name>
+		<instanceable>true</instanceable>
+		<private-session-attributes>true</private-session-attributes>
+		<ajaxable>false</ajaxable>
+	</portlet>
+	<portlet>
+		<portlet-name>Objective Search Portlet</portlet-name>
+		<open-search-class>au.gov.qld.redland.objective.ObjectiveOpenSearchImpl</open-search-class>
+		<instanceable>true</instanceable>
+		<private-session-attributes>true</private-session-attributes>
+		<ajaxable>false</ajaxable>
+	</portlet>
+</liferay-portlet-app>

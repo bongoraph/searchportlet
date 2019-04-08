@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+	<persistence-unit name="liferayPU" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>au.gov.qld.redland.corpdir.domain.UserColumnData</class>
+		<!--
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="net.sourceforge.jtds.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.user" value="SysDevLifeRay" />
+			<property name="javax.persistence.jdbc.password" value="1nDev@rcc" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:jtds:sqlserver://DAIFDBT02/lportal_623_dev_daniel;instance=RCCAPPS" />
+			<property name="eclipselink.ddl-generation" value="create-tables" />
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="database" />
+			<property name="eclipselink.logging.level" value="WARNING" />
+		</properties>
+		-->
+	</persistence-unit>
+
+	<persistence-unit name="dwStagingPU"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<!--
+		<class>au.gov.qld.redland.corpdir.domain.GroupBean</class>
+		<class>au.gov.qld.redland.corpdir.domain.EmployeeBean</class>
+		<class>au.gov.qld.redland.corpdir.domain.FinancialDelegationBean</class>
+		<class>au.gov.qld.redland.corpdir.domain.NonFinancialDelegationBean</class>
+		<class>au.gov.qld.redland.corpdir.domain.LocationBean</class>
+		<class>au.gov.qld.redland.corpdir.domain.ContactNumberBean</class>
+		<class>au.gov.qld.redland.corpdir.domain.ContactTypeBean</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="net.sourceforge.jtds.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.user" value="SysDevApp" />
+			<property name="javax.persistence.jdbc.password" value="1nDev@rcc" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:jtds:sqlserver://DAIFDBT02/CorpDirE3;instance=RCCAPPS" />
+			<property name="eclipselink.ddl-generation" value="none" />
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="database" />
+			<property name="eclipselink.logging.level" value="WARNING" />
+			<property name="eclipselink.weaving" value="static" />
+		</properties>
+		-->
+	</persistence-unit>
+</persistence>
